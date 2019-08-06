@@ -6,5 +6,5 @@ spring:
     user: admin
     password: admin
 jms:
-  pub-sub-domain: false         #false Ϊqueue trueΪtopic
-myqueue: boot-activemq-queue
+  pub-sub-domain: true         #false queue true topic
+myqueue: boot-activemq-topic

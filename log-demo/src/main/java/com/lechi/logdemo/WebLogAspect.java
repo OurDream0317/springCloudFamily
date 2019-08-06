@@ -19,9 +19,6 @@ public class WebLogAspect {
     ThreadLocal startTime=new ThreadLocal();
     @Pointcut("execution(public * com.lechi.logdemo..*.*(..))")
     public void webLog(){
-        logger.info("=======================");
-        logger.info("555555555555555555555555555555");
-        logger.info("=======================");
     }
 
     @Before("webLog()")

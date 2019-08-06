@@ -7,6 +7,8 @@ import java.util.*;
 public class CollectionDemo {
 
     public static void method() {
+        ArrayList arrayList=new ArrayList();
+        LinkedList linkedList=new LinkedList();
         Map<String, List> map = new HashMap<>();
         List list = new ArrayList();
         list.add("郑州");
@@ -72,4 +74,24 @@ public class CollectionDemo {
         local.set("wangweixiang");
         System.out.println(local.get());
     }
+    @Test
+    public void main1(){
+        LinkedList list=new LinkedList();
+        System.out.println(new String("114").hashCode());
+        list.add("115");
+        list.add("114");
+        list.add("113");
+        list.add("112");
+        list.add("111");
+        Object[] ints = list.toArray();
+
+        for (Object o:ints) {
+            System.out.println(o);
+        }
+     /* Arrays.sort(ints);*/
+       /* for (Object o:ints) {
+            System.out.println(o);
+        }*/
+    }
+
 }
